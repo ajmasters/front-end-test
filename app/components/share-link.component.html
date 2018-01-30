@@ -1,0 +1,15 @@
+<button socialshare="" socialshare-provider="facebook" socialshare-url="{{$ctrl.link}}" ng-class="{'btn-link':$ctrl.iconeOnly,'btn-outline-primary':!$ctrl.iconeOnly}"
+    class="btn btn-sm" type="button">
+    <i class="fa fa-facebook"></i>
+    <span ng-if="!$ctrl.iconeOnly">Facebook</span>
+</button>
+<button socialshare="" socialshare-provider="twitter" socialshare-text="Adorei esse produto" ng-class="{'btn-link':$ctrl.iconeOnly,'btn-outline-primary':!$ctrl.iconeOnly}"
+    class="btn btn-sm" socialshare-url="{{$ctrl.link}}" socialshare-hashtags="ng-store, minutrade, test-front-end" type="button">
+    <i class="fa fa-twitter"></i>
+    <span ng-if="!$ctrl.iconeOnly">Twitter</span>
+</button>
+<button socialshare="" socialshare-provider="google" socialshare-url="{{$ctrl.link}}" ng-class="{'btn-link':$ctrl.iconeOnly,'btn-outline-primary':!$ctrl.iconeOnly}"
+    class="btn btn-sm">
+    <i class="fa fa-google-plus"></i>
+    <span ng-if="!$ctrl.iconeOnly">Google +</span>
+</button>

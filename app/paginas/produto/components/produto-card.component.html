@@ -1,0 +1,32 @@
+<div class="block">
+    <div class="top">
+        <ul>
+            <li>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+            </li>
+            <li>
+                <span ng-bind="$ctrl.produto.Fabricante" class="band"></span>
+            </li>
+            <li>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="middle">
+        <a ui-sref="produto({nsu: $ctrl.produto.NSU})">
+            <img src="http://via.placeholder.com/350x300" class="img-fluid" >
+        </a>
+    </div>
+
+    <div class="bottom">
+        <a ui-sref="produto({nsu: $ctrl.produto.NSU})">
+            <div ng-bind="$ctrl.produto.Nome" class="heading"></div>
+            <div ng-bind="$ctrl.produto.Descricao" class="info"></div>
+            <div class="style">Color: Red / Style: M9621C</div>
+            <div ng-bind="$ctrl.produto.Valor | currency" class="price"></div>
+        </a>
+        <hr>
+        <links-sociais link="$ctrl.UrlBase+'/'+$ctrl.produto.NSU" icone-only="true"></links-sociais>
+    </div>
+</div>

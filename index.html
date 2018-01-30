@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="public" />
+    <title>WebStore</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="styles/main.css" rel="stylesheet"></link>
+</head>
+
+<body ng-app="app" ng-controller="mainController as vm">
+    <div class="shop-masthead">
+        <div class="container">
+            <nav class="shop-nav">
+                <a ui-sref="home" ui-sref-active="active" class="shop-nav-item">Home</a>
+                <a ng-if="vm.Auth.EstaAutenticado()" ui-sref="produtos" ui-sref-active="active" class="shop-nav-item">Produtos</a>
+                
+                <a ng-if="!vm.Auth.EstaAutenticado()" ng-click="vm.Auth.Logar()" class="shop-nav-item pull-right" href="">Login</a>
+                <a ng-if="vm.Auth.EstaAutenticado()" ng-click="vm.Auth.Sair()" class="shop-nav-item pull-right" href="">Sair</a>
+            </nav>
+        </div>
+    </div>
+    <div ui-view class="container"></div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"></p>
+        </div>
+    </footer>
+</body>
+
+<script src="scripts/angular/angular.min.js" type="text/javascript"></script>
+<script src="scripts/satellizer/dist/satellizer.min.js" type="text/javascript"></script>
+<script src="scripts/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+<script src="scripts/angular-ui-router/release/stateEvents.min.js" type="text/javascript"></script>
+<script src="scripts/angular-socialshare/angular-socialshare.js" type="text/javascript"></script>
+
+<script src="app/app.module.js" type="text/javascript"></script>
+<script src="app/app.config.js" type="text/javascript"></script>
+<script src="app/app.routes.js" type="text/javascript"></script>
+
+<script src="app/app.run.js" type="text/javascript"></script>
+<script src="app/app.filters.js" type="text/javascript"></script>
+
+<script src="app/services/ds-produto.js" type="text/javascript"></script>
+<script src="app/services/ds-comentario.js" type="text/javascript"></script>
+<script src="app/services/ds-auth.js" type="text/javascript"></script>
+
+<script src="app/app.controller.js" type="text/javascript"></script>
+<script src="app/paginas/home/home.controller.js" type="text/javascript"></script>
+<script src="app/components/share-link.component.js" type="text/javascript"></script>
+
+<script src="app/paginas/produto/produto-listar.controller.js" type="text/javascript"></script>
+<script src="app/paginas/produto/produto-detalhar.controller.js" type="text/javascript"></script>
+<script src="app/paginas/produto/components/produto-card.component.js" type="text/javascript"></script>
+<script src="app/paginas/produto/components/produto-comentarios.component.js" type="text/javascript"></script>
+</html>

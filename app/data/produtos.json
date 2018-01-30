@@ -1,0 +1,30 @@
+[
+    {
+        "NSU": 1,
+        "Nome": "Smart TV LED 32''",
+        "Fabricante": "Samsung",
+        "Valor": 1199.9,
+        "Descricao": "32J4300 HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 120Hz"
+    },
+    {
+        "NSU": 2,
+        "Nome": "Smartphone Moto G 5S",
+        "Fabricante": "Samsung",
+        "Valor": 899,
+        "Descricao": "Dual Chip Android 7.0 Tela 5.2''32GB 4G Wi-Fi Câmera 16MP"
+    },
+    {
+        "NSU": 3,
+        "Nome": "Notebook Essentials E35S",
+        "Fabricante": "Samsung",
+        "Valor": 1.779,
+        "Descricao": "Intel Core i3 4GB 1TB Tela LED HD 14'' Windows 10 Cinza"
+    },
+    {
+        "NSU": 4,
+        "Nome": "Lavadora de Roupas 11kg",
+        "Fabricante": "Brastemp",
+        "Valor": 1239.9,
+        "Descricao": "BWS11 Cesto Smart Wave - Branco"
+    }
+]

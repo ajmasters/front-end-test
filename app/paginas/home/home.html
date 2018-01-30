@@ -1,0 +1,11 @@
+<div class="text-center">
+    <h1>Bem vindo a NG-STORE</h1>
+    <div ng-if="!vm.Auth.EstaAutenticado()" class="alert alert-info">
+        Faça seu
+        <a ng-click="vm.Auth.Logar()" href>login</a> para ver nossos produtos.
+    </div>
+    <div ng-if="vm.Auth.EstaAutenticado()" class="alert alert-sucess">
+        Veja nossos
+        <a ui-sref="produtos">produtos</a> e boas compras.
+    </div>
+</div>
